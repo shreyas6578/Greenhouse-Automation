@@ -1,0 +1,55 @@
+### Introduction: Greenhouse Automation
+
+Greenhouse automation involves utilizing technology to control and monitor the growing environment of plants. This can include managing temperature, light levels, irrigation, fertilizer application, and humidity. Automated systems help overcome natural deficiencies such as short growing seasons or poor lighting conditions, thereby improving food production. Traditionally, most greenhouses are manually controlled and monitored, which is labor-intensive and time-consuming.
+
+### 1.1 Background
+
+The Greenhouse Automation System aims to benefit farmers, especially in rural areas, by automating the monitoring and control of the greenhouse environment. This system reduces the need for direct human supervision.
+
+### 1.2 Objective
+
+The main objective is to enable remote monitoring and control of greenhouse parameters using IoT. This means greenhouse workers can manage conditions such as irrigation without being physically present.
+
+### 1.3 Detailed Overview
+
+#### 1.3.1 Purpose
+- **Primary:** To monitor and automate greenhouse processes.
+- **Secondary:** To enhance crop production and ensure food security.
+
+#### 1.3.2 Applicability
+The system uses an Arduino microcontroller, an ESP32 microcontroller with a Wi-Fi module, and various sensors including:
+- Temperature and humidity sensor
+- Light-dependent resistor (LDR)
+- Soil moisture sensor
+- Methane gas sensor
+- Water pump
+
+These sensors continuously send real-time data to the microcontroller. When values reach critical thresholds, the microcontroller takes immediate action and notifies the user via an app.
+
+#### 1.3.3 Scope
+Implementing a smart greenhouse monitoring system using IoT can significantly benefit the agricultural sector by saving time, money, and labor.
+
+### Proposed Solution Implementation
+
+To address production issues caused by the Off damage and implement a solution directly, here's a basic outline of the steps involved in setting up the greenhouse automation system:
+
+1. **Setup Hardware:**
+   - Connect sensors (temperature, humidity, soil moisture, methane gas) to the microcontroller.
+   - Connect the microcontroller to the Wi-Fi module for network connectivity.
+   - Connect the water pump to the microcontroller.
+
+2. **Programming the Microcontroller:**
+   - Write code to read data from sensors.
+   - Set threshold values for each sensor to trigger actions.
+   - Implement logic to control the water pump and notify the user via the app.
+
+3. **Develop the Mobile App:**
+   - Create an app to display real-time data from the greenhouse.
+   - Implement notifications to alert the user when thresholds are reached.
+
+4. **Testing and Deployment:**
+   - Test the system in a controlled environment to ensure it responds correctly to sensor data.
+   - Deploy the system in the greenhouse and monitor its performance.
+
+
+
